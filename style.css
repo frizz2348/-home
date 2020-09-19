@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body {
+  overflow-x: hidden;
+  background: #d30b47;
+  height: 100vw;
+  width: 100%; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 10px;
+  height: 4px;
+  width: 30px;
+  cursor: pointer;
+  transition: ease-in 2s; }
+  .menu-btn__burger {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    width: 28px;
+    height: 3px;
+    background-color: purple; }
+    .menu-btn__burger::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background-color: #26be54; }
+    .menu-btn__burger::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 28px;
+      height: 3px;
+      background-color: #26be54; }
+
+.menu-btn__burger.open {
+  transform: rotate(-135deg);
+  background: transparent; }
+
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px); }
+
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px); }
+
+.container {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 60px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #c21230;
+    transition: ease-in-out 1s;
+    padding: 2px; }
+
+fieldset {
+  background-color: #131111;
+  border-radius: 50px;
+  border: 4px solid #d30b47; }
+
+legend {
+  text-align: center; }
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+  color: black; }
+
+.navbar {
+  background-color: #f4f6f1; }
+  .navbar img {
+    width: 40px; }
+
+.btn {
+  cursor: pointer;
+  background-color: #f4f6f1;
+  color: red;
+  border-radius: .4em; }
+  .btn:hover {
+    padding: .5px;
+    margin: .5px;
+    transition: ease-in-out .5s;
+    background-color: #1f1717; }
+
+header {
+  display: inline; }
+  header img {
+    width: 40px; }
+
+.image-bg {
+  background: url("images/scenic-view-of-mountains-against-sky-326235.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px; }
+
+.bio {
+  margin: 200px auto 0;
+  width: 70%; }
+  .bio h1, .bio h3 {
+    color: #f4f6f1;
+    text-align: center; }
+
+.card {
+  width: 80%;
+  margin: 90px auto 0;
+  color: black;
+  background-color: #e9ebec; }
+  .card-images {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto 30px; }
+    .card-images img {
+      width: 100%;
+      height: 350px;
+      background-size: contain;
+      margin-top: 30px;
+      border-radius: .5em; }
+
+h1, h2, h3 {
+  text-align: center;
+  color: white; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 650; }
+
+h3 {
+  font-size: 16px;
+  font-weight: 450;
+  font-family: serif;
+  line-height: 25px; }
+
+#collections {
+  padding: 30px;
+  background-color: #d0cfd6;
+  color: black; }
+
+.night-mode {
+  background-color: #081c55;
+  color: #c010a9; }
+
+.col-images {
+  margin-top: 70px; }
+
+footer {
+  position: fixed;
+  bottom: 1px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: #c010a9;
+  padding: 5px;
+  margin-top: 25px; }
+  footer a:hover {
+    transition: ease-in 500ms;
+    font-weight: 450;
+    color: #c010a9;
+    background-color: white;
+    border-radius: .4em; }
+
+.fade {
+  opacity: 0;
+  transition: 500ms ease-in; }
+
+.appear {
+  opacity: 1;
+  transition: 1500ms ease-in;
+  transform: translateY(-60px); }
+
+@media (min-width: 600px) {
+  .img {
+    height: 280px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px; }
+
+  .card {
+    line-height: 20px;
+    text-align: center;
+    margin: auto auto;
+    background-color: #fdffff; }
+    .card-images img {
+      width: 100%;
+      height: 280px;
+      background-size: contain;
+      margin: auto auto; }
+
+  .bio {
+    margin: 300px auto 0;
+    width: 60%; } }
+@media (min-width: 1040px) {
+  .container {
+    width: 80%;
+    margin: auto;
+    background-color: white; }
+
+  .card {
+    line-height: 25px; }
+
+  .img {
+    width: 75%;
+    margin: 10px auto 10px; }
+
+  .bio {
+    margin: 350px auto 0;
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
